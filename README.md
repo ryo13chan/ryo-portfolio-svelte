@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-bun x sv create --template minimal --types ts --install bun ryo-portfolio-svelte
+bun x sv create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" sveltekit-adapter="adapter:vercel" mcp="ide:claude-code,vscode+setup:remote" --install bun ryo-portfolio-svelte
 ```
 
 ## Developing
