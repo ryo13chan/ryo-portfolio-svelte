@@ -1,6 +1,7 @@
 <script lang="ts">
-	import './layout.css'
 	import favicon from '$lib/assets/favicon.ico'
+	import Header from '$lib/components/feature/header/Header.svelte'
+	import './layout.css'
 
 	let { children } = $props()
 </script>
@@ -9,4 +10,5 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<Header />
 {@render children()}
